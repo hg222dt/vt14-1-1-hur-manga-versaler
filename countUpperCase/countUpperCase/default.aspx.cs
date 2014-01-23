@@ -18,6 +18,7 @@ namespace countUpperCase
         {
             var textInput = TextInput.Text;
 
+
         }
     }
 }
