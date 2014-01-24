@@ -18,7 +18,10 @@ namespace countUpperCase
         {
             var textInput = TextInput.Text;
 
+            Model.TextAnalyzer textAnalyzer = new Model.TextAnalyzer();
 
+            UpperCaseAmount.Text = textAnalyzer.GetNumberOfCapital(textInput).ToString();
+            PlaceHolder1.Visible = true;
         }
     }
 }
