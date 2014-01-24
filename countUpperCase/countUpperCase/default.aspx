@@ -5,12 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="Content/styles.css" rel="stylesheet" />
 </head>
 <body>
+    <h1>
+        Versaluträknaren!
+    </h1>
+    <p>
+        Skriv en text i fältet nedan för att räkna ut antalet versaler.
+    </p>
     <form id="form1" runat="server">
-    <div>
+    <div id="formDiv1">
         <asp:TextBox ID="TextInput" runat="server"></asp:TextBox>
-        <asp:Button ID="SendButton" runat="server" Text="Button" OnClick="SendButton_Click" />
+        <asp:Button ID="SendButton" runat="server" Text="Räkna ut antal versaler!" OnClick="SendButton_Click" />
     </div>
     <div>
         <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible="false">

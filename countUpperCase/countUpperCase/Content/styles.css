@@ -1,0 +1,13 @@
+﻿body {
+    padding: 30px;
+}
+
+#formDiv1 {
+    background-color: lightgray;
+    display: inline-block;
+    padding: 20px;
+}
+
+#TextInput {
+    display: block;
+}
