@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>
-        Versaluträknaren!
+        Versal-uträknare!
     </h1>
     <p>
         Skriv en text i fältet nedan för att räkna ut antalet versaler.
@@ -25,6 +25,11 @@
                 Antalet versaler i den inmatade texten är:
                 <asp:Label ID="UpperCaseAmount" runat="server" Text="Label" />
                 stycken.
+            </p>
+        </asp:PlaceHolder>
+        <asp:PlaceHolder ID="ErrMessage" runat="server" Visible="false">
+            <p>
+                Tyvärr har ett smärre fel inträffat OCH JORDEN KOMMER GÅ UNDER!!!!!!
             </p>
         </asp:PlaceHolder>
     </div>

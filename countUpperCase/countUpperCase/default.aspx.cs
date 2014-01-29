@@ -16,12 +16,29 @@ namespace countUpperCase
 
         protected void SendButton_Click(object sender, EventArgs e)
         {
-            var textInput = TextInput.Text;
+            if (SendButton.Text != "Rensa")
+            {
+                var textInput = TextInput.Text;
 
-            Model.TextAnalyzer textAnalyzer = new Model.TextAnalyzer();
+                Model.TextAnalyzer textAnalyzer = new Model.TextAnalyzer();
 
-            UpperCaseAmount.Text = textAnalyzer.GetNumberOfCapital(textInput).ToString();
-            PlaceHolder1.Visible = true;
+                UpperCaseAmount.Text = textAnalyzer.GetNumberOfCapital(textInput).ToString();
+                PlaceHolder1.Visible = true;
+                TextInput.Enabled = false;
+                SendButton.Text = "Rensa";
+            }
+            else
+            {
+                TextInput.Enabled = true;
+                TextInput.Text = "";
+                SendButton.Text = "Räkna ut antal versaler!";
+                PlaceHolder1.Visible = false;
+            }
+        }
+
+        protected void ErrorMessage()
+        {
+            ErrMessage.Visible = true;
         }
     }
 }
